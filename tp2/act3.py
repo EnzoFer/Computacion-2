@@ -24,7 +24,7 @@ error = proceso.communicate()[1]
 
 if not error:
     fecha = dt.datatime.now()
-    escribir = fecha, ": El comando:", comando, "se ha ejecutado correctamente"
+    escribir = fecha, ": El comando: se ha ejecutado correctamente"
     archivo_escrito = open(archivo_modificado, "a")
     archivo_escrito.write(escribir)
     archivo_escrito.write("\n")
